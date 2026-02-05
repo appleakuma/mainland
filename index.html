@@ -8,13 +8,14 @@
     <style>
         .word{
             position: relative;
-            top: 175px;
+            display: block;
             padding: 20px;
             max-width: 1000px;
             color: rgb(87, 88, 80);
             background-color: rgb(212, 186, 179);
             font-size: 22px;
             font-weight: 300;
+            margin-top: 25px;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
@@ -38,23 +39,25 @@
     margin: 0px;">
     <div style="
         position: fixed;
-        width: 100%;          
-        height: 150px;
-        text-align: center;
+        width: 100%;
+        height: 30vh; /* 改为视口高度 */
+        display: flex; /* 添加 flex 布局 */
+        justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
         z-index: 1000;
         background-color: rgb(104, 106, 97);
         box-shadow: 0 5px 10px rgba(87, 88, 80, 0.2);
+        top: 0px;
     ">
-        <img src="image/title.png" style="height: 150px;"> 
+        <img src="image/title.png" style="height: 200px; min-width: 200px; max-width: 1000px; width: auto; object-fit: contain;"> 
     </div>
-    <div class="word">
+    <div class="word" style="margin-top: 35vh;">
         欢迎来到Apple Akuma的主页<br>
         <br>
         本网页主要存放游戏及其相关内容<br>
         感谢大家的游玩！<br>
     </div>
-    <div class="word" style="top: 200px;">
-
+    <div class="word">
         圣诞日的Neversista：<br>
         <a href="https://applesista.itch.io/christmas-neversista" class="link">itch平台(需要科学上网)</a><br>
         <a href="https://pan.baidu.com/s/11d2QQleu5CFJyHaCgz15tA?pwd=ra6v" class="link">百度网盘</a><br>
@@ -68,7 +71,6 @@
         max-width: 100%;
         background-color: rgb(144, 127, 127);
         border-radius: 0px;
-        top:225px;
         height: 100px;
         color: #c9b1b1;
         font-size: 18px;
