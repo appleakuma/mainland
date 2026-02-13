@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索引擎</title>
+</head>
+<body style="background-color: rgb(223, 135, 153);">
+
+    <div style="text-align: center;position: relative;top: 35vh;">
+    <input style="border-radius: 10px;border: #808080df solid ;width: 300px;height: 30px;" type="text" id="pageName" placeholder="请输入关键词">
+    <button style="margin: 10px;width: 60px;height: 30px;border-radius: 20px;border: 1px solid #696969df;" onclick="openPage()">搜索</button>
+    </div>
+    <script>
+    function openPage() {
+        const pageName = document.getElementById('pageName').value;
+        if (pageName.includes("槙原涉") || pageName.includes("麦基劳")) {
+            window.open("workpass.html", "_blank");
+        }else{
+            window.open("searchblank.html","_self");
+        }
+    }
+    </script>
+
+    <div style="padding-top: 20px;padding-bottom: 20px;border-radius: 10px;background-color: white;max-width: 500px;margin-top:40vh;text-align: center;margin-left: auto;margin-right: auto;">
+        <h2>精彩尽在 北斗周刊<br><a href="news2.html">点击即看2017最新报道</a></h2>
+        
+    </div>
+        <div style="border-radius: 10px;background-color: white;max-width: 500px;margin-top: 30px;text-align: center;margin-left: auto;margin-right: auto;">
+        <p style="padding-top: 20px;padding-bottom: 20px;"><a href="computer1.html" style="text-decoration: none;color: rgb(223, 135, 153);">返回桌面</a></p>
+        
+    </div>
+</body>
+</html>
