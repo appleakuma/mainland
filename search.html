@@ -14,11 +14,27 @@
     <script>
     function openPage() {
         const pageName = document.getElementById('pageName').value;
+        if(pageName.includes("久保谷") || pageName.includes("Mackylove")|| pageName.includes("mackylove")|| pageName.includes("April")|| pageName.includes("april")){
+                window.open("jbg.html","_blank")
+        }
+        if(pageName.includes("茅") || pageName.includes("kapikapi")|| pageName.includes("K")){
+                window.open("kaya.html","_blank")
+        }
+        if(pageName.includes("和泉") || pageName.includes("giraffe")|| pageName.includes("ghost")){
+                window.open("hqx.html","_blank")
+        }
+        if(pageName.includes("白峰") || pageName.includes("cait")|| pageName.includes("sith")){
+                window.open("bfcr.html","_blank")
+        }
+        if(pageName.includes("炼") || pageName.includes("renji")|| pageName.includes("milk")||pageName.includes("MILK")){
+                window.open("sclc.html","_blank")
+        }
         if (pageName.includes("槙原涉") || pageName.includes("麦基劳")|| pageName.includes("Neversista")|| pageName.includes("neversista")) {
             window.open("workpass.html", "_blank");
         }else{
             window.open("searchblank.html","_self");
         }
+        
     }
     </script>
 
@@ -33,3 +49,4 @@
 </body>
 
 </html>
+
